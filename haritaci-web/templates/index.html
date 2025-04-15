@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Haritacı Bot</title>
+</head>
+<body>
+    <h1>🧭 Haritacı Bot</h1>
+    <form method="POST">
+        <input type="text" name="soru" placeholder="Bir soru yaz..." size="50">
+        <button type="submit">Sor</button>
+    </form>
+
+    {% if cevap %}
+        <p><strong>🤖 Bot:</strong> {{ cevap }}</p>
+    {% endif %}
+</body>
+</html>
